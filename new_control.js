@@ -8,3 +8,8 @@ for(var i=0;i<len;i++){
     });  
 }
 
+function audio(letter){
+    Source="sounds/"+`${letter.toLowerCase()}`+".mp3";
+    var aud_name= new Audio(Source);
+    aud_name.play();
+}
