@@ -15,7 +15,7 @@ function audio(letter){
 }
 function Animation(letter){
     letter=letter.toUpperCase();
-    var str="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789*0#";
+    
     for(var i=0;i<str.length;i++){
         if (str[i]==letter)
             break;
@@ -24,6 +24,9 @@ function Animation(letter){
     var b=document.querySelectorAll(".btn div")[i];
     a.classList.add("anim");
     b.style.color="red";
-    
+    setTimeout(function(){
+        a.classList.remove("anim");
+        b.style.color="white";
+    },250);
 }
 
