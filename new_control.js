@@ -15,7 +15,7 @@ function audio(letter){
 }
 function Animation(letter){
     letter=letter.toUpperCase();
-    
+    var str="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789*0#";
     for(var i=0;i<str.length;i++){
         if (str[i]==letter)
             break;
