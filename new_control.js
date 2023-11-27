@@ -30,3 +30,8 @@ function Animation(letter){
     },250);
 }
 
+document.addEventListener("keypress",function(event){
+    Key = event.key;
+    audio(Key);
+    Animation(Key);
+})
