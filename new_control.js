@@ -1,3 +1,4 @@
+
 var button=document.querySelectorAll(".btn div");
 var len= button.length;
 for(var i=0;i<len;i++){
@@ -13,6 +14,7 @@ function audio(letter){
     var aud_name= new Audio(Source);
     aud_name.play();
 }
+
 function Animation(letter){
     letter=letter.toUpperCase();
     var str="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789*0#";
@@ -29,9 +31,9 @@ function Animation(letter){
         b.style.color="white";
     },250);
 }
-
 document.addEventListener("keypress",function(event){
     Key = event.key;
     audio(Key);
     Animation(Key);
 })
+
