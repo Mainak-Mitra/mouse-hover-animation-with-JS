@@ -13,3 +13,17 @@ function audio(letter){
     var aud_name= new Audio(Source);
     aud_name.play();
 }
+function Animation(letter){
+    letter=letter.toUpperCase();
+    var str="ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789*0#";
+    for(var i=0;i<str.length;i++){
+        if (str[i]==letter)
+            break;
+      }
+    var a=document.querySelectorAll(".btn")[i];
+    var b=document.querySelectorAll(".btn div")[i];
+    a.classList.add("anim");
+    b.style.color="red";
+    
+}
+
